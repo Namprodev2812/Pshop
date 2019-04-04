@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="2dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:id="@+id/image_item_grid_main"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:background="#d2fc67"
+            android:transitionName="contact" />
+
+        <!--<de.hdodenhof.circleimageview.CircleImageView -->
+            <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+            <!--android:id="@+id/profile_image"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:src="@drawable/honganhh"-->
+            <!--app:civ_border_color="#FFFFFF"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginTop="30dp"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--app:civ_border_width="2dp" />-->
+
+        <ImageView
+            android:src="@drawable/item_honganhh"
+            android:id="@+id/profile_image"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:layout_width= "200dp"
+            android:layout_height="200dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_title_item_grid_main"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:text="Light title"
+        />
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="#88c7ff"
+            android:id="@+id/text_money_item_grid_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="180dp"
+            android:text="255.000 VND" />
+
+        <ImageView
+            android:id="@+id/image_add_item_grid_main"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_shopping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

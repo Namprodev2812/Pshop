@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:background="#88c7ff"
+        android:id="@+id/toolbar_child"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp">
+
+        <LinearLayout
+            android:weightSum="11"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@drawable/chevron_left"
+                android:id="@+id/back_searchmain_left"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+            </ImageView>
+            <TextView
+                android:gravity="center"
+                android:layout_weight="9"
+                android:id="@+id/text_toolbar_main"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Tìm kiếm sản phẩm"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                >
+            </TextView>
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+    <android.support.v7.widget.SearchView
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/toolbar_child"
+        android:background="@drawable/borderwhitesearview"
+        android:layout_weight="10"
+        android:id="@+id/serach_child"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:defaultQueryHint="Tìm kiếm"
+        app:iconifiedByDefault="true"
+        app:queryHint="Vui lòng nhập tên sản phẩm">
+    </android.support.v7.widget.SearchView>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_fragment_searchactivity"
+        android:layout_width="match_parent"
+        android:layout_below="@id/serach_child"
+        android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+        android:background="#f1eeee"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerview_search">
+    </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>

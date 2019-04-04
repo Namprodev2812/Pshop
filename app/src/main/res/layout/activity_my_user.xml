@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_myUSER"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:background="#88c7ff"
+        >
+        <LinearLayout
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:background="#88c7ff"
+                android:src="@drawable/chevron_left"
+                android:id="@+id/menu_myuser_left"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+            </ImageView>
+            <TextView
+                android:gravity="center"
+                android:layout_weight="8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="My User"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF">
+            </TextView>
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+    <ImageView
+        android:src="@drawable/ic_profilenew"
+        android:scaleType="fitCenter"
+        android:id="@+id/image_myuser"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:weightSum="5"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Tên tài khoản: "
+            />
+        <TextView
+            android:id="@+id/textview_account_myuser"
+            android:layout_weight="4"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Account: "
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:weightSum="5"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Họ và tên: "
+            />
+        <TextView
+            android:id="@+id/textview_name_account_myuser"
+            android:layout_weight="4"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Name: "
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:weightSum="5"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Mật khẩu: "
+            />
+        <TextView
+            android:id="@+id/textview_password_myuser"
+            android:layout_weight="4"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="*********** "
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:weightSum="5"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Email:       "
+            />
+        <TextView
+            android:id="@+id/textview_email_myuser"
+            android:layout_weight="4"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Email:"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:weightSum="5"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Địa chỉ: "
+            />
+        <TextView
+            android:id="@+id/textview_diachi_myuser"
+            android:layout_weight="4"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Địa chỉ: "
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_myuser_delete"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/borderdelete"
+            android:text="Delete"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btn_myuser_logout"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:text="Logout"
+            android:background="@drawable/borderlogout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>

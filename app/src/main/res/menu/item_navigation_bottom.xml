@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/na_product"
+        android:icon="@drawable/ic_light2"
+        android:title="light2"/>
+
+    <item android:id="@+id/na_pay"
+        android:icon="@drawable/ic_donhang"
+        android:title="pay"/>
+
+    <item android:id="@+id/na_qrcode"
+        android:icon="@drawable/ic_qcode"
+        android:title="qrcode"/>
+
+    <item android:id="@+id/na_search"
+        android:icon="@drawable/ic_search"
+        android:title="product"/>
+
+    <item android:id="@+id/na_newfeed"
+        android:icon="@drawable/ic_newfeed"
+        android:title="newfeed"/>
+
+</menu>

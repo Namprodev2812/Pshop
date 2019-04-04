@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_MYDONHANG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:background="#88c7ff"
+        >
+        <LinearLayout
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:background="#88c7ff"
+                android:src="@drawable/chevron_left"
+                android:id="@+id/menu_mydonhang_left"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+            </ImageView>
+            <TextView
+                android:gravity="center"
+                android:layout_weight="8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Notification"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF">
+            </TextView>
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+<LinearLayout
+    android:layout_below="@+id/toolbar_MYDONHANG"
+    android:weightSum="10"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_weight="8"
+        android:src="@drawable/item_giohangnhanh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+    <TextView
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#fa7d16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đơn hàng được thêm thành công"
+        />
+    <TextView
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#6a9eda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quý khách vui lòng đợi cuộc gọi từ bộ phận chăm sóc khách hàng !"
+        />
+</LinearLayout>
+</RelativeLayout>

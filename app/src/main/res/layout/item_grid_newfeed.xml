@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/image_item_grid_newfeed"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:background="#d2fc67"
+        android:scaleType="centerCrop"
+        android:transitionName="contact" />
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/text_title_item_grid_newfeed"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="newfeed title" />
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/text_time_item_grid_newfeed"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="time" />
+
+</LinearLayout>

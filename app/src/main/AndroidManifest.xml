@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.trnhxunnam.pshopmyclone">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_lightback5new"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_light"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".View.ActivitySplashApp.SplashMainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".View.ActivityMain.MainActivity"
+            android:noHistory="true" />
+        <activity
+            android:name=".View.AcivityLogin.MyProfileActivity"
+            android:noHistory="true" />
+        <activity
+            android:name=".View.ActivityGiohang.MyProductActivity"
+            android:noHistory="true" />
+        <activity
+            android:name=".View.ActivityNotification.MyNotificationActivity"
+            android:noHistory="true" />
+        <activity
+            android:name=".View.ActivityFullInforProduct.InforProductActivity"
+            android:noHistory="true" />
+        <activity android:name=".View.FragmentRssInNewFeed.WebViewActivity" />
+        <activity
+            android:name=".View.ActivitySearchinGiohang.SearchMainActivity"
+            android:noHistory="true"
+            android:parentActivityName=".View.ActivityGiohang.MyProductActivity" />
+        <activity
+            android:name=".View.ActivityProfile.MyUserActivity"
+            android:noHistory="true" />
+        <activity
+            android:name=".View.ActivityThanhtoan.MyPayActivity"
+            android:noHistory="true"
+            android:parentActivityName=".View.ActivityGiohang.MyProductActivity" />
+        <activity
+            android:name=".View.ActivityThanhtoan.MyThanhtoanActivity"
+            android:noHistory="true" />
+        <activity android:name=".View.ActivityThanhtoan.EditUserActivity"
+            android:noHistory="true"
+            />
+        <activity android:name=".View.Activitydonhangfull.DonhangfullActivity"
+            android:noHistory="true"
+            ></activity>
+    </application>
+
+</manifest>

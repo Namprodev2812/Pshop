@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "693536168348",
+    "firebase_url": "https://appclonepshop.firebaseio.com",
+    "project_id": "appclonepshop",
+    "storage_bucket": "appclonepshop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:693536168348:android:d65de0d7562d606e",
+        "android_client_info": {
+          "package_name": "com.example.trnhxunnam.pshopmyclone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "693536168348-v4bkcr8c5jbmtoubeeerfumrujvgpbto.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOepOR5Iy21M9L-A1_mhIUF8movJfE1cA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/na_myproduct_search"
+        android:icon="@drawable/ic_search2"
+        android:title="search"/>
+
+    <item android:id="@+id/na_myproduct_qcode"
+        android:icon="@drawable/ic_qcode"
+        android:title="qcode"/>
+
+    <item android:id="@+id/na_myproduct_cash"
+        android:icon="@drawable/ic_local_atm_black_24dp"
+        android:title="cash"/>
+</menu>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_MYPRODUCT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:background="#88c7ff"
+        >
+        <LinearLayout
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:background="#88c7ff"
+                android:src="@drawable/chevron_left"
+                android:id="@+id/menu_myproduct_left"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+            </ImageView>
+            <TextView
+                android:gravity="center"
+                android:layout_weight="8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="My product"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF">
+            </TextView>
+            <ImageView
+                android:background="#88c7ff"
+                android:src="@drawable/ic_delete"
+                android:id="@+id/menu_myproduct_delete"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+            </ImageView>
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+    <FrameLayout
+        android:layout_below="@+id/toolbar_MYPRODUCT"
+        android:id="@+id/frame_MYPRODUCT"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/navigation_MYPRODUCT">
+    </FrameLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:background="#ede9e5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/item_navigation_myproduct_bottom"
+        app:labelVisibilityMode="unlabeled"
+        android:id="@+id/navigation_MYPRODUCT">
+    </android.support.design.widget.BottomNavigationView>
+</RelativeLayout>

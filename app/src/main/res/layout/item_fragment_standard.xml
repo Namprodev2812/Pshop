@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/coordinator_main"
+    android:background="#faf9f9"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:background="#ffffff"
+            android:layout_margin="5dp"
+            android:weightSum="4"
+            android:orientation="horizontal"
+            android:id="@+id/view_login"
+            android:layout_below="@+id/toolbar_MYPRODUCT"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:weightSum="4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="3"
+                    android:id="@+id/image_login_myproduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:src="@drawable/ic_profilenew2"
+                    />
+
+                <TextView
+                    android:id="@+id/text_login_myproduct"
+                    android:textColor="#6589ff"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="Đăng nhập"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="Tổng thanh toán: "
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:padding="2dp"
+                    android:textColor="#FFFFFF"
+                    android:clickable="false"
+                    android:id="@+id/textsum_myproduct"
+                    android:background="@drawable/border"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 VND"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@+id/view_login"
+            android:id="@+id/recyclerview_standard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
